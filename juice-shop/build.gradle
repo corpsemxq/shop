@@ -1,0 +1,19 @@
+apply plugin: 'eclipse'
+apply plugin: 'groovy'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.7'
+    compile 'org.apache.logging.log4j:log4j-api:2.0.2'
+    compile 'org.apache.logging.log4j:log4j-core:2.0.2'
+    compile 'joda-time:joda-time:2.9'
+    compile('org.codehaus.groovy.modules.http-builder:http-builder:0.7.1') {
+        exclude group:'org.codehaus.groovy', module: 'groovy'
+    }
+    compile 'org.apache.logging.log4j:log4j-1.2-api:2.0.2'
+    compile 'org.springframework.security:spring-security-web:4.0.3.RELEASE'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+}
