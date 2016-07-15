@@ -1,0 +1,47 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Created by .gitignore support plugin (hsz.mobi)
+
+### Gradle template
+.gradle
+build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+juice-shop/logs
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+/plugin.xml
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+juice-shop/target
+
+*.idea/
+*.iml
+
+juice-shop/web.iml
+process/gradle/wrapper/gradle-wrapper.properties
