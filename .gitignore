@@ -10,7 +10,7 @@ gradle-app.setting
 
 
 # web application files
-/web-app/WEB-INF/classes
+#/web-app/WEB-INF/classes
 
 # default HSQL database files for production mode
 /prodDb.*
