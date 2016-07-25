@@ -90,11 +90,12 @@ environments {
         grails.logging.jul.usebridge = true
         mongo {
             juiceshop {
-                hosts = ["52.41.57.242": 27017]
-                db = 'juiceshop-test'
+                hosts = ["localhost": 27017]
+                db = 'juiceshop'
                 sslEnabled = false
                 username = "juiceshop"
-                password = "juiceshop"
+                password = "123456"
+                authDb = 'juiceshop'
                 maximumConnectionCount = 100
                 minimumConnectionCount = 10
                 maximumIdleTimeoutInSeconds = 3600
@@ -108,6 +109,7 @@ environments {
             juiceshop {
                 hosts = ["52.41.57.242": 27017]
                 db = 'juiceshop'
+                authDb = 'juiceshop'
                 sslEnabled = false
                 username = "juiceshop"
                 password = "juiceshop"
@@ -138,4 +140,28 @@ log4j.main = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    info  'org.codehaus.groovy.grails.web.servlet',        // controllers
+            'org.codehaus.groovy.grails.web.pages',          // GSP
+            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+            'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+            'org.codehaus.groovy.grails.commons',            // core / classloading
+            'org.codehaus.groovy.grails.plugins',            // plugins
+            'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+            'org.springframework',
+            'org.hibernate',
+            'net.sf.ehcache.hibernate'
+
+    environments {
+        development {
+            debug 'grails.app'
+            debug 'jmsMessage'
+//            trace 'grails.plugin.mail'
+
+            root {
+                info()
+            }
+        }
+    }
 }
