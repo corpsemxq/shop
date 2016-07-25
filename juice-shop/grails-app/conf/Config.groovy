@@ -88,10 +88,34 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        mongo {
+            juiceshop {
+                hosts = ["52.41.57.242": 27017]
+                db = 'juiceshop-test'
+                sslEnabled = false
+                username = "juiceshop"
+                password = "juiceshop"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
+        }
     }
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
+        mongo {
+            juiceshop {
+                hosts = ["52.41.57.242": 27017]
+                db = 'juiceshop'
+                sslEnabled = false
+                username = "juiceshop"
+                password = "juiceshop"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
+        }
     }
 }
 
