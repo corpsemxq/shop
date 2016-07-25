@@ -91,11 +91,11 @@ environments {
         mongo {
             juiceshop {
                 hosts = ["localhost": 27017]
-                db = 'juiceshop'
+                db = "juiceshop"
                 sslEnabled = false
-                username = "juiceshop"
+                username = "richard"
                 password = "123456"
-                authDb = 'juiceshop'
+                authdb = "juiceshop"
                 maximumConnectionCount = 100
                 minimumConnectionCount = 10
                 maximumIdleTimeoutInSeconds = 3600
@@ -109,7 +109,7 @@ environments {
             juiceshop {
                 hosts = ["52.41.57.242": 27017]
                 db = 'juiceshop'
-                authDb = 'juiceshop'
+                authdb = 'juiceshop'
                 sslEnabled = false
                 username = "juiceshop"
                 password = "juiceshop"

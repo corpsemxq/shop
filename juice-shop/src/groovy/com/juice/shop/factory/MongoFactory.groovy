@@ -36,8 +36,8 @@ class MongoFactory {
                     .maxConnectionIdleTime((grailsApplication.config.mongo.juiceshop.maximumIdleTimeoutInSeconds as Integer) * 1000)
             def mongoClientOptions = mongoClientOptionsBuilder.build()
 
-//            Mongo mongo = new MongoClient(serverAddresses,[mongoCredential], mongoClientOptions)
-            Mongo mongo = new MongoClient(serverAddresses, mongoClientOptions)
+            Mongo mongo = new MongoClient(serverAddresses,[mongoCredential], mongoClientOptions)
+         //   Mongo mongo = new MongoClient(serverAddresses, mongoClientOptions)
             //         Mongo mongo = new MongoClient(serverAddresses)
             Morphia morphia = new Morphia()
             String dbName = "${grailsApplication.config.mongo.juiceshop.db}"
