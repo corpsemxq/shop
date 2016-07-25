@@ -17,8 +17,6 @@ class MongoFactory {
 
     Datastore getDatastore() {
         try {
-
-
             List<ServerAddress> serverAddresses = []
             grailsApplication.config.mongo.juiceshop.hosts.each { key, value ->
                 log.info "Added MongoDB host $key:$value."
@@ -30,33 +28,21 @@ class MongoFactory {
             log.info "pass is $pass"
             log.info user
             log.info authDb
-//            MongoCredential mongoCredential = MongoCredential.createCredential(user, authDb, pass)
-//            log.info "comes here"
-
-            List<MongoCredential> credentials = new ArrayList<MongoCredential>();
-            credentials.add(
-                    MongoCredential.createScramSha1Credential(
-                            user,
-                            authDb,
-                            pass
-                    )
-            );
+            MongoCredential mongoCredential = MongoCredential.createCredential(user, authDb, pass)
+            log.info "comes here"
             MongoClientOptions.Builder mongoClientOptionsBuilder = MongoClientOptions.builder()
                     .connectionsPerHost((grailsApplication.config.mongo.juiceshop.maximumConnectionCount as Integer))
                     .minConnectionsPerHost((grailsApplication.config.mongo.juiceshop.minimumConnectionCount as Integer))
                     .maxConnectionIdleTime((grailsApplication.config.mongo.juiceshop.maximumIdleTimeoutInSeconds as Integer) * 1000)
             def mongoClientOptions = mongoClientOptionsBuilder.build()
 
-            Mongo mongo = new MongoClient(serverAddresses,credentials, mongoClientOptions)
+//            Mongo mongo = new MongoClient(serverAddresses,[mongoCredential], mongoClientOptions)
+            Mongo mongo = new MongoClient(serverAddresses, mongoClientOptions)
             //         Mongo mongo = new MongoClient(serverAddresses)
             Morphia morphia = new Morphia()
             String dbName = "${grailsApplication.config.mongo.juiceshop.db}"
-            println "sb"
-
             log.info "Mongo Db name: $dbName"
             Datastore datastore = morphia.createDatastore(mongo, dbName)
-            println "sb"
-
             morphia.mapPackage("com.juice.shop.domain")
             morphia.map(User.class)
             morphia.map(Product.class)
