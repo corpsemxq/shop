@@ -13,6 +13,7 @@ class UrlMappings {
 
 
         "/"(view:"/index")
+        "/home"(view:"/layouts/home")
         "500"(view:'/error')
 	}
 }

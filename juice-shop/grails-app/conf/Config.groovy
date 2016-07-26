@@ -90,8 +90,8 @@ environments {
         grails.logging.jul.usebridge = true
         mongo {
             juiceshop {
-                hosts = ["localhost": 27017]
-                db = "juiceshop"
+                hosts = ["52.41.57.242": 27017]
+                db = "juiceshop-test"
                 sslEnabled = false
                 username = "richard"
                 password = "123456"
