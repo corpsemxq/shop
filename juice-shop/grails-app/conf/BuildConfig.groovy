@@ -47,6 +47,11 @@ grails.project.dependency.resolution = {
     }
 
     dependencies {
+        compile 'org.mongodb.morphia:morphia:1.0.1'
+        compile 'com.fasterxml.jackson.core:jackson-databind:2.3.1'
+        compile 'com.google.code.gson:gson:2.3.1'
+        compile 'javax.mail:mail:1.4.7'
+
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
         // runtime 'mysql:mysql-connector-java:5.1.29'
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'

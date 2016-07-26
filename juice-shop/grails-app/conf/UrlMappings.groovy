@@ -7,6 +7,11 @@ class UrlMappings {
             }
         }
 
+        "/v1/user/create"(controller: "user", namespace: "v1") {
+            action = [POST: "saveUser"]
+        }
+
+
         "/"(view:"/index")
         "500"(view:'/error')
 	}

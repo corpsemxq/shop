@@ -88,10 +88,36 @@ grails.hibernate.osiv.readonly = false
 environments {
     development {
         grails.logging.jul.usebridge = true
+        mongo {
+            juiceshop {
+                hosts = ["localhost": 27017]
+                db = "juiceshop"
+                sslEnabled = false
+                username = "richard"
+                password = "123456"
+                authdb = "juiceshop"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
+        }
     }
     production {
         grails.logging.jul.usebridge = false
         // TODO: grails.serverURL = "http://www.changeme.com"
+        mongo {
+            juiceshop {
+                hosts = ["52.41.57.242": 27017]
+                db = 'juiceshop'
+                authdb = 'juiceshop'
+                sslEnabled = false
+                username = "juiceshop"
+                password = "juiceshop"
+                maximumConnectionCount = 100
+                minimumConnectionCount = 10
+                maximumIdleTimeoutInSeconds = 3600
+            }
+        }
     }
 }
 
@@ -114,4 +140,28 @@ log4j.main = {
            'org.springframework',
            'org.hibernate',
            'net.sf.ehcache.hibernate'
+
+    info  'org.codehaus.groovy.grails.web.servlet',        // controllers
+            'org.codehaus.groovy.grails.web.pages',          // GSP
+            'org.codehaus.groovy.grails.web.sitemesh',       // layouts
+            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+            'org.codehaus.groovy.grails.web.mapping',        // URL mapping
+            'org.codehaus.groovy.grails.commons',            // core / classloading
+            'org.codehaus.groovy.grails.plugins',            // plugins
+            'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
+            'org.springframework',
+            'org.hibernate',
+            'net.sf.ehcache.hibernate'
+
+    environments {
+        development {
+            debug 'grails.app'
+            debug 'jmsMessage'
+//            trace 'grails.plugin.mail'
+
+            root {
+                info()
+            }
+        }
+    }
 }
