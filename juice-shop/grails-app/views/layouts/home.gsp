@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
 </head>
 
-<body>
+<body data-ng-app="juiceshop">
 
 <!-- The navigation menu will get the value of the "active" variable as a class.
 			 The $event.preventDefault() stops the page from jumping when a link is clicked. -->
@@ -39,7 +39,10 @@
 <p data-ng-hide="active">Please click a menu item</p>
 <p data-ng-show="active">You chose <b>{{active}}</b></p>
 
+<div>
+
+</div>
 <!-- Include AngularJS from Google's CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+<script src="${resource(dir: 'js', file: 'angular.min.js')}"></script>
 </body>
 </html>
