@@ -12,8 +12,13 @@ class UrlMappings {
         }
 
 
-        "/"(view:"/index")
+
+        "/"(view:"/consumer/index")
+        "/about"(view:"/consumer/about-us")
+        "/menu"(view:"/consumer/card")
         "/home"(view:"/layouts/home")
         "500"(view:'/error')
+        "404"(view:'/404')
+        "/grails"(view: "grailsIndex.gsp")
 	}
 }

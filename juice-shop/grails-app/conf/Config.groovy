@@ -90,12 +90,12 @@ environments {
         grails.logging.jul.usebridge = true
         mongo {
             juiceshop {
-                hosts = ["52.41.57.242": 27017]
+                hosts = ["localhost": 27017]
                 db = "juiceshop-test"
                 sslEnabled = false
                 username = "richard"
                 password = "123456"
-                authdb = "juiceshop"
+                authdb = "juiceshop-test"
                 maximumConnectionCount = 100
                 minimumConnectionCount = 10
                 maximumIdleTimeoutInSeconds = 3600
@@ -110,7 +110,7 @@ environments {
                 hosts = ["52.41.57.242": 27017]
                 db = 'juiceshop'
                 authdb = 'juiceshop'
-                sslEnabled = false
+                sslEnabled = true
                 username = "juiceshop"
                 password = "juiceshop"
                 maximumConnectionCount = 100
