@@ -56,13 +56,13 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Pages <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="page-simple.html">Simple Page</a>
+											<li><a href="page-simple.gsp">Simple Page</a>
 											</li>
-											<li><a href="page-sidebar.html">Right Sidebar</a>
+											<li><a href="page-sidebar.gsp">Right Sidebar</a>
 											</li>
 											<li><g:link uri="/about">About us</g:link>
                                             </li>
-											<li><a href="services.html">Services</a>
+											<li><a href="services.gsp">Services</a>
 											</li>
 										</ul>
 									</li>
@@ -82,15 +82,15 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Portfolio / Gallery <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="portfolio-2-columns.html">2 columns</a>
+											<li><a href="portfolio-2-columns.gsp">2 columns</a>
 											</li>
-											<li><a href="portfolio-3-columns.html">3 columns</a>
+											<li><a href="portfolio-3-columns.gsp">3 columns</a>
 											</li>
-											<li><a href="portfolio-4-columns.html">4 columns</a>
+											<li><a href="portfolio-4-columns.gsp">4 columns</a>
 											</li>
-											<li><a href="portfolio.html">Portfolio with filter</a>
+											<li><a href="portfolio.gsp">Portfolio with filter</a>
 											</li>
-											<li><a href="portfolio-item.html">Portfolio item</a>
+											<li><a href="portfolio-item.gsp">Portfolio item</a>
 											</li>
 										</ul>
 									</li>
@@ -99,9 +99,9 @@
 										<ul class="dropdown-menu">
 											<li><a href="../404.gsp">404</a>
 											</li>
-											<li><a href="empty.html">Empty</a>
+											<li><a href="empty.gsp">Empty</a>
 											</li>
-											<li><a href="login.html">Sign in</a>
+											<li><a href="login.gsp">Sign in</a>
 											</li>
 										</ul>
 									</li>
@@ -111,11 +111,11 @@
 
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Features</a>
 								<ul class="dropdown-menu">
-									<li><a href="typography.html">Typography</a>
+									<li><a href="typography.gsp">Typography</a>
 									</li>
-									<li><a href="forms.html">Forms</a>
+									<li><a href="forms.gsp">Forms</a>
 									</li>
-									<li><a href="buttons.html">Buttons</a>
+									<li><a href="buttons.gsp">Buttons</a>
 									</li>
 								</ul>
 							</li>
@@ -123,7 +123,7 @@
 							<li><g:link uri="/menu">Menu</g:link>
 							</li>
 
-							<li><a href="contact.html">Contact</a>
+							<li><a href="contact.gsp">Contact</a>
 							</li>
 
 						</ul>
@@ -280,7 +280,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.html">View more</a>
+						<a href="portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -288,7 +288,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.html">View more</a>
+						<a href="portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -296,7 +296,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.html">View more</a>
+						<a href="portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -304,7 +304,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.html">View more</a>
+						<a href="portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -356,7 +356,7 @@
 						</li>
 						<li><a href="blog-index.gsp">Blog</a>
 						</li>
-						<li><a href="contact.html">Contact</a>
+						<li><a href="contact.gsp">Contact</a>
 						</li>
 					</ul>
 				</div>

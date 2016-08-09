@@ -18,7 +18,7 @@ class UrlMappings {
         "/menu"(view:"/consumer/card")
         "/home"(view:"/layouts/home")
         "500"(view:'/error')
-        "404"(view:'/404')
+        "404"(controller: "page", action: 'errorPage', namespace: "v1")
         "/grails"(view: "grailsIndex.gsp")
 	}
 }

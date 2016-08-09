@@ -31,7 +31,7 @@
 				<h1>404</h1>
 				<p>Page not found</p>
 				<p class="text-muted">The requested URL was not found on this server.</p>
-				<a href="consumer/index.gsp" class="btn btn-primary">Back to home</a>
+				<g:link uri="/"><p class="btn btn-primary">Back to home</p></g:link>
 			</div>
 		</div>
 	</div>

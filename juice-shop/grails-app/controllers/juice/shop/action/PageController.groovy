@@ -3,6 +3,12 @@ package juice.shop.action
 class PageController {
 
     def index() {
-        render(view: '/consumer/index')
     }
+
+    def errorPage() {
+        render(view: '/404', model: [test:"test"])
+    }
+
+
+
 }

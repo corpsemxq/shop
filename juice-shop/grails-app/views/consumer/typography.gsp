@@ -10,12 +10,12 @@
 		<![endif]-->
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/swiper.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/style.css" />
-	<script src="../../../web-app/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'bootstrap', file: 'css/bootstrap.min.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'animate.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'font-awesome.min.css')}"/>
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'swiper.min.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style.css')}" />
+	<script src="${resource(dir: 'js', file: 'pace.min.js')}"></script>
 </head>
 
 <body>
@@ -48,13 +48,13 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Pages <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="page-simple.html">Simple Page</a>
+											<li><a href="page-simple.gsp">Simple Page</a>
 											</li>
-											<li><a href="page-sidebar.html">Right Sidebar</a>
+											<li><a href="page-sidebar.gsp">Right Sidebar</a>
 											</li>
 											<li><a href="about-us.gsp">About Us</a>
 											</li>
-											<li><a href="services.html">Services</a>
+											<li><a href="services.gsp">Services</a>
 											</li>
 										</ul>
 									</li>
@@ -74,15 +74,15 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Portfolio / Gallery <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="portfolio-2-columns.html">2 columns</a>
+											<li><a href="portfolio-2-columns.gsp">2 columns</a>
 											</li>
-											<li><a href="portfolio-3-columns.html">3 columns</a>
+											<li><a href="portfolio-3-columns.gsp">3 columns</a>
 											</li>
-											<li><a href="portfolio-4-columns.html">4 columns</a>
+											<li><a href="portfolio-4-columns.gsp">4 columns</a>
 											</li>
-											<li><a href="portfolio.html">Portfolio with filter</a>
+											<li><a href="portfolio.gsp">Portfolio with filter</a>
 											</li>
-											<li><a href="portfolio-item.html">Portfolio item</a>
+											<li><a href="portfolio-item.gsp">Portfolio item</a>
 											</li>
 										</ul>
 									</li>
@@ -91,9 +91,9 @@
 										<ul class="dropdown-menu">
 											<li><a href="../404.gsp">404</a>
 											</li>
-											<li><a href="empty.html">Empty</a>
+											<li><a href="empty.gsp">Empty</a>
 											</li>
-											<li><a href="login.html">Sign in</a>
+											<li><a href="login.gsp">Sign in</a>
 											</li>
 										</ul>
 									</li>
@@ -103,11 +103,11 @@
 
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Features</a>
 								<ul class="dropdown-menu">
-									<li><a href="typography.html">Typography</a>
+									<li><a href="typography.gsp">Typography</a>
 									</li>
-									<li><a href="forms.html">Forms</a>
+									<li><a href="forms.gsp">Forms</a>
 									</li>
-									<li><a href="buttons.html">Buttons</a>
+									<li><a href="buttons.gsp">Buttons</a>
 									</li>
 								</ul>
 							</li>
@@ -115,7 +115,7 @@
 							<li><a href="card.gsp">Menu</a>
 							</li>
 
-							<li><a href="contact.html">Contact</a>
+							<li><a href="contact.gsp">Contact</a>
 							</li>
 
 						</ul>
@@ -244,7 +244,7 @@
 						</li>
 						<li><a href="blog-index.gsp">Blog</a>
 						</li>
-						<li><a href="contact.html">Contact</a>
+						<li><a href="contact.gsp">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -254,10 +254,9 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="../../../web-app/script.js"></script>
+<script src="${resource(dir: 'js', file: 'script.js')}"></script>
+<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 </body>
 
 </html>

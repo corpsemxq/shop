@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ZUPA - Responsive Website Template / Portfolio</title>
+	<title>ZUPA - Responsive Website Template / Portfolio 4 columns</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]>
@@ -10,12 +10,12 @@
 		<![endif]-->
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/animate.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/swiper.min.css" />
-	<link rel="stylesheet" type="text/css" href="../../../web-app/css/style.css" />
-	<script src="../../../web-app/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'bootstrap', file: 'css/bootstrap.min.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'animate.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'font-awesome.min.css')}"/>
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'swiper.min.css')}" />
+	<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'style.css')}" />
+	<script src="${resource(dir: 'js', file: 'pace.min.js')}"></script>
 </head>
 
 <body>
@@ -48,13 +48,13 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Pages <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="page-simple.html">Simple Page</a>
+											<li><a href="page-simple.gsp">Simple Page</a>
 											</li>
-											<li><a href="page-sidebar.html">Right Sidebar</a>
+											<li><a href="page-sidebar.gsp">Right Sidebar</a>
 											</li>
 											<li><a href="about-us.gsp">About Us</a>
 											</li>
-											<li><a href="services.html">Services</a>
+											<li><a href="services.gsp">Services</a>
 											</li>
 										</ul>
 									</li>
@@ -74,15 +74,15 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Portfolio / Gallery <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="portfolio-2-columns.html">2 columns</a>
+											<li><a href="portfolio-2-columns.gsp">2 columns</a>
 											</li>
-											<li><a href="portfolio-3-columns.html">3 columns</a>
+											<li><a href="portfolio-3-columns.gsp">3 columns</a>
 											</li>
-											<li><a href="portfolio-4-columns.html">4 columns</a>
+											<li><a href="portfolio-4-columns.gsp">4 columns</a>
 											</li>
-											<li><a href="portfolio.html">Portfolio with filter</a>
+											<li><a href="portfolio.gsp">Portfolio with filter</a>
 											</li>
-											<li><a href="portfolio-item.html">Portfolio item</a>
+											<li><a href="portfolio-item.gsp">Portfolio item</a>
 											</li>
 										</ul>
 									</li>
@@ -91,9 +91,9 @@
 										<ul class="dropdown-menu">
 											<li><a href="../404.gsp">404</a>
 											</li>
-											<li><a href="empty.html">Empty</a>
+											<li><a href="empty.gsp">Empty</a>
 											</li>
-											<li><a href="login.html">Sign in</a>
+											<li><a href="login.gsp">Sign in</a>
 											</li>
 										</ul>
 									</li>
@@ -103,11 +103,11 @@
 
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Features</a>
 								<ul class="dropdown-menu">
-									<li><a href="typography.html">Typography</a>
+									<li><a href="typography.gsp">Typography</a>
 									</li>
-									<li><a href="forms.html">Forms</a>
+									<li><a href="forms.gsp">Forms</a>
 									</li>
-									<li><a href="buttons.html">Buttons</a>
+									<li><a href="buttons.gsp">Buttons</a>
 									</li>
 								</ul>
 							</li>
@@ -115,7 +115,7 @@
 							<li><a href="card.gsp">Menu</a>
 							</li>
 
-							<li><a href="contact.html">Contact</a>
+							<li><a href="contact.gsp">Contact</a>
 							</li>
 
 						</ul>
@@ -128,113 +128,138 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
+			<div class="col-sm-12">
 				<h2>Portfolio</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non imperdiet ante. Nam luctus nulla ac justo euismod bibendum. Maecenas vel libero dapibus, accumsan sem eu, viverra nisi. Nunc lectus justo, pulvinar vel libero ac, aliquam malesuada orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ut leo et arcu condimentum maximus. Nulla facilisi. </p>
-
-				<div id="filters" class="btn-group">
-					<button class="btn btn-default is-checked" data-filter="*">All</button>
-					<button class="btn btn-default" data-filter=".appetizers">Appetizers</button>
-					<button class="btn btn-default" data-filter=".entrees">Entrees</button>
-					<button class="btn btn-default" data-filter=".desserts">Desserts</button>
-				</div>
 			</div>
-			<div class="col-sm-12 col-md-10 col-md-offset-1">
-				<div class="portfolio grid-3">
-					<figure class="entrees">
+			<div class="col-sm-12">
+				<div class="portfolio grid-4">
+					<figure>
 						<img src="images/portfolio/1.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="desserts">
+					<figure>
 						<img src="images/portfolio/2.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="desserts">
+					<figure>
 						<img src="images/portfolio/3.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="entrees">
+					<figure>
 						<img src="images/portfolio/4.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="appetizers">
-						<img src="images/portfolio/5.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="desserts">
+					<figure>
 						<img src="images/portfolio/2.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="appetizers">
-						<img src="images/portfolio/6.jpg" alt="" />
+					<figure>
+						<img src="images/portfolio/3.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="entrees">
+					<figure>
 						<img src="images/portfolio/4.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="entrees">
+					<figure>
 						<img src="images/portfolio/1.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
-					<figure class="appetizers">
-						<img src="images/portfolio/5.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="desserts">
-						<img src="images/portfolio/2.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
-						</figcaption>
-					</figure>
-					<figure class="desserts">
+					<figure>
 						<img src="images/portfolio/3.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.html">View more</a>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/4.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/1.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/2.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/4.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/1.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/3.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
+						</figcaption>
+					</figure>
+					<figure>
+						<img src="images/portfolio/4.jpg" alt="" />
+						<figcaption>
+							<h2>Portfolio Item</h2>
+							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
+							<a href="portfolio-item.gsp">View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -261,7 +286,7 @@
 						</li>
 						<li><a href="blog-index.gsp">Blog</a>
 						</li>
-						<li><a href="contact.html">Contact</a>
+						<li><a href="contact.gsp">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -272,25 +297,9 @@
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="../../../web-app/isotope.min.js"></script>
-	<script src="../../../web-app/script.js"></script>
-	<script>
-	$('.portfolio').isotope({
-		itemSelector: 'figure',
-		layoutMode: 'masonry'
-	});
-	$('#filters').on('click', 'button', function () {
-		var filterValue = $(this).attr('data-filter');
-		$('#filters').find('.is-checked').removeClass('is-checked');
-		$(this).addClass('is-checked');
-		$('.portfolio').isotope({
-			filter: filterValue
-		});
-	});
-
-	</script>
+	<script src="${resource(dir: 'js', file: 'script.js')}"></script>
+	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+	<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 </body>
 
 </html>
