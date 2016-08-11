@@ -89,7 +89,7 @@
 						<div>
 							<p class="name"><span>Vivamus quis mattis risus</span>
 							</p>
-							<p class="price">$9.99</p>
+							<p class="price">$9.99</p><button class="btn btn-outline-primary pull-left">Add to cart</button>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
@@ -97,7 +97,7 @@
 						<div>
 							<p class="name"><span>Aenean quam lectus</span>
 							</p>
-							<p class="price">$4.99</p>
+							<p class="price">$4.99</p><button class="btn btn-outline-primary pull-left">Add to cart</button>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
@@ -105,7 +105,7 @@
 						<div>
 							<p class="name"><span>Convallis in sollicitudin</span>
 							</p>
-							<p class="price">$9.99</p>
+							<p class="price">$9.99</p><button class="btn btn-outline-primary pull-left">Add to cart</button>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
@@ -113,7 +113,7 @@
 						<div>
 							<p class="name"><span>Maecenas non tellus</span>
 							</p>
-							<p class="price">$19.99</p>
+							<p class="price">$19.99</p><div class="pull-right"><button class="btn btn-outline-primary">Add to cart</button></div>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
@@ -121,7 +121,7 @@
 						<div>
 							<p class="name"><span>Quisque quis molestie elit</span>
 							</p>
-							<p class="price">$12.99</p>
+							<p class="price">$12.99</p><button class="btn btn-outline-primary">Add to cart</button>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
@@ -129,7 +129,7 @@
 						<div>
 							<p class="name"><span>Proin ante purus, viverra sit amet cursus nec</span>
 							</p>
-							<p class="price">$12.99</p>
+							<p class="price">$12.99</p><button class="btn btn-outline-primary">Add to cart</button>
 						</div>
 						<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 					</li>
