@@ -31,7 +31,7 @@
                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Menu</a>
                             <ul class="dropdown-menu">
                                 <g:each in="['juice', 'smothi', 'oil','rawfood']" var="category">
-                                    <li><g:link controller="page" action="menuPage">${category}</g:link><span class="pull-right"><i class="fa fa-angle-right"></i></span>
+                                    <li><g:link controller="page" action="menuPage">${category}<span class="pull-right"><i class="fa fa-angle-right"></i></span></g:link>
                                     </li>
                                 </g:each>
                             </ul>
