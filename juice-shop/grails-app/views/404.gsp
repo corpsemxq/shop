@@ -20,10 +20,7 @@
 
 <body>
 	<header>
-		<div class="container logo">
-			<a href="consumer/index.gsp"><img class="img-responsive" src="images/logos/logo.png" alt="" />
-			</a>
-		</div>
+		<g:applyLayout name="header" />
 	</header>
 	<div class="container">
 		<div class="row">
