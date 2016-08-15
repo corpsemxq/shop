@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ZUPA - Responsive Website Template / Home</title>
+	<title>Home</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]>
@@ -134,46 +134,48 @@
 
 		<g:applyLayout name="header" />
 	</header>
-	<section>
 
-		<div class="swiper-container">
-			<div class="parallax-bg" style="background-image:url('https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/slider.jpg')" data-swiper-parallax="-15%"></div>
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<div class="swiper-caption">
-						<div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Zupa - Responsive Template</div>
-						<div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-						<div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
-							<a href="${resource(uri : '/menu')}" class="btn btn-custom btn-lg">read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-caption">
-						<div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">New Menu</div>
-						<div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-						<div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
-							<a href="${resource(uri : '/menu')}" class="btn btn-custom btn-lg">read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-caption">
-						<div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Lorem ipsum dolor sit</div>
-						<div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-						<div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
-							<a href="${resource(uri : '/menu')}" class="btn btn-custom btn-lg">read more</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination swiper-pagination-white"></div>
-			<!-- Add Navigation -->
-			<div class="swiper-button-prev swiper-button-white"></div>
-			<div class="swiper-button-next swiper-button-white"></div>
-		</div>
-	</section>
+
+<section>
+
+    <div class="swiper-container">
+        <div class="parallax-bg" style="background-image:url('https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/slider.jpg')" data-swiper-parallax="-15%"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-caption">
+                    <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Zupa - Responsive Template</div>
+                    <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
+                        <a href="card.html" class="btn btn-custom btn-lg">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-caption">
+                    <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">New Menu</div>
+                    <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
+                        <a href="card.html" class="btn btn-custom btn-lg">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-caption">
+                    <div class="title" data-swiper-parallax="-100" data-animation="fadeInDownBig">Lorem ipsum dolor sit</div>
+                    <div class="subtitle" data-swiper-parallax="-200" data-animation="fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    <div class="text" data-swiper-parallax="-300" data-animation="fadeInUpBig">
+                        <a href="card.html" class="btn btn-custom btn-lg">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
+    </div>
+</section>
 	<section>
 		<div class="container">
 			<div class="row">
@@ -372,26 +374,26 @@
 	<script src="${resource(dir: 'js', file: 'animate-on-scroll.js')}"></script>
 	<script src="${resource(dir: 'js', file: 'script.js')}"></script>
 	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+	<script src="${resource(dir: 'js', file: 'swiper.jquery.min.js')}"></script>
 	<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 	<script>
-	var swiper = new Swiper('.swiper-container', {
-		pagination: '.swiper-pagination',
-		paginationClickable: true,
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
-		parallax: true,
-		speed: 600,
-		autoplay: 2500,
-		onSlideChangeStart: (function (swiper) {
-			var active = swiper.slides[swiper.activeIndex];
-			var animated = $(active).find('*[data-animation]');
-			$.each(animated, function (key, value) {
-				$(value).addClass($(value).data('animation'));
-				$(value).addClass('animated');
-			});
-		})
-	});
-
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            parallax: true,
+            speed: 600,
+            autoplay: 2500,
+            onSlideChangeStart: (function (swiper) {
+                var active = swiper.slides[swiper.activeIndex];
+                var animated = $(active).find('*[data-animation]');
+                $.each(animated, function (key, value) {
+                    $(value).addClass($(value).data('animation'));
+                    $(value).addClass('animated');
+                });
+            })
+        });
 	</script>
 </body>
 
