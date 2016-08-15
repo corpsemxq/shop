@@ -15,8 +15,8 @@
                     <a class="navbar-brand visible-xs" href="${createLink(controller: "page", action: "homePage")}"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo-xs.png" alt="/logos/logo-xs.png" />
                     </a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar">Toggle navigation</span>
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
@@ -31,7 +31,7 @@
                         <li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Menu</a>
                             <ul class="dropdown-menu">
                                 <g:each in="['juice', 'smothi', 'oil','rawfood']" var="category">
-                                    <li><g:link controller="page" action="menuPage">${category}<span class="pull-right"><i class="fa fa-angle-right"></i></span></g:link>
+                                    <li><g:link controller="page" action="menuPage" params="['menuType': category]">${category}<span class="pull-right"><i class="fa fa-angle-right"></i></span></g:link>
                                     </li>
                                 </g:each>
                             </ul>

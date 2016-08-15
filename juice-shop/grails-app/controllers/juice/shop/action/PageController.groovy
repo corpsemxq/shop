@@ -11,8 +11,22 @@ class PageController {
         render(view: '/consumer/index', model: [test:"test"])
     }
 
-    def menuPage() {
-        render(view: '/consumer/card', model: [test:"test"])
+    def menuPage(String menuType) {
+        List items = [1,2,3,4,5,6,7,8,9]
+        if (menuType == "juice") {
+
+        } else if (menuType == "smothi") {
+
+        } else if (menuType == "oil") {
+
+        } else if (menuType == "rawfood"){
+
+        } else {
+            homePage()
+            return
+        }
+
+        render(view: '/consumer/card', model: [test:"test", category: menuType, items: items])
     }
 
 
