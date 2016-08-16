@@ -1,6 +1,7 @@
 package juice.shop.action
 
 import grails.test.mixin.TestFor
+import juice.shop.action.api.CategoryController
 import spock.lang.Specification
 
 /**

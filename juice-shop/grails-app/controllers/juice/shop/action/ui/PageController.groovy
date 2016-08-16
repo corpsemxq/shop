@@ -1,4 +1,4 @@
-package juice.shop.action
+package juice.shop.action.ui
 
 class PageController {
 

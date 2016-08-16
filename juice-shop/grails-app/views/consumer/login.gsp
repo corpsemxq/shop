@@ -29,15 +29,18 @@
 
 				<section class="login-form">
 					<h1>Login</h1>
+					${flash.message}
 					<div class="row">
 						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-							<form class="form">
+							%{--<form class="form">--}%
+							<g:form controller="user" action="login">
 								<div class="form-group">
 									<div class="input-group">
 										<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
 										</div>
 										<div class="animated-form-control">
-											<input placeholder="Login" type="text" name="name" class="text form-control" required="required" aria-required="true" />
+											%{--<input placeholder="Login" type="text" name="name" class="text form-control" required="required" aria-required="true" />--}%
+											<g:textField placeholder="Login" type="text" name="user"  class="text form-control" required="required" aria-required="true"/>
 										</div>
 									</div>
 								</div>
@@ -46,14 +49,17 @@
 										<div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>
 										</div>
 										<div class="animated-form-control">
-											<input placeholder="Password" type="password" name="name" class="text form-control" required="required" aria-required="true" />
+											%{--<input placeholder="Password" type="password" name="name" class="text form-control" required="required" aria-required="true" />--}%
+											<g:textField placeholder="Password" type="password" name="pass" class="text form-control" required="required" aria-required="true" />
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<button class="btn btn-primary pull-right">sign in</button>
+									<g:actionSubmit action="login" class="btn btn-primary pull-right" value="sign in" />
+									%{--<button class="btn btn-primary pull-right">sign in</button>--}%
 								</div>
-							</form>
+							%{--</form>--}%
+							</g:form>
 						</div>
 					</div>
 				</section>

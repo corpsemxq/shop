@@ -1,9 +1,10 @@
-package juice.shop.action
+package juice.shop.action.ui
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.juice.shop.domain.User
+import com.juice.shop.domain.Product
+import juice.shop.action.ProductService
 
-class UserController {
+class ProductController {
 
     static allowedMethods = [saveUser: "POST"]
 
@@ -11,8 +12,7 @@ class UserController {
     static namespace = 'v1'
     def beforeInterceptor = [action: this.&filter]
     def ObjectMapper objectMapper
-
-    UserService userService
+    ProductService productService
 
     private filter() {
         response.setHeader('Access-Control-Allow-Origin', '*')
@@ -25,9 +25,41 @@ class UserController {
 
     def index() {}
 
-    def saveUser() {
-        User newUser = objectMapper.readValue(request.JSON.toString(), User)
-        userService.save(newUser)
-        respond newUser
+
+    //create
+    def createProduct() {
+        Product newProductor = objectMapper.readValue(request.JSON.toString(), Product)
+        productService.save(newProductor)
+        respond newProductor
+    }
+
+
+
+
+
+
+
+
+
+    def updateProduct() {
+
+    }
+
+    def getProductBySku() {
+
+    }
+
+    def getProductsByCategory() {
+
+    }
+
+
+
+    def updateCategory() {
+
+    }
+
+    def getCategories() {
+
     }
 }

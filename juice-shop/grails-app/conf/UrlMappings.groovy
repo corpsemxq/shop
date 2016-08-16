@@ -7,10 +7,9 @@ class UrlMappings {
             }
         }
 
-        "/v1/user/create"(controller: "user", namespace: "v1") {
-            action = [POST: "saveUser"]
-        }
-
+        "/user/create"(controller: "user", namespace: "v1") { action = [POST: "saveUser"] }
+        "/user/login"(controller: "user", namespace: "v1") { action = [POST: "login"] }
+        "/user/logout"(controller: "user", namespace: "v1") { action = [GET: "logout"] }
 
 
         "/"(view:"/consumer/index")
