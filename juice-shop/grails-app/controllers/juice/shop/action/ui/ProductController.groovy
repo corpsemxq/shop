@@ -2,7 +2,10 @@ package juice.shop.action.ui
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.juice.shop.domain.Product
+import grails.plugin.cookie.CookieService
 import juice.shop.action.ProductService
+
+import javax.servlet.http.Cookie
 
 class ProductController {
 
@@ -13,6 +16,7 @@ class ProductController {
     def beforeInterceptor = [action: this.&filter]
     def ObjectMapper objectMapper
     ProductService productService
+    CookieService cookieService
 
     private filter() {
         response.setHeader('Access-Control-Allow-Origin', '*')
@@ -26,40 +30,15 @@ class ProductController {
     def index() {}
 
 
-    //create
-    def createProduct() {
-        Product newProductor = objectMapper.readValue(request.JSON.toString(), Product)
-        productService.save(newProductor)
-        respond newProductor
-    }
-
-
-
-
-
-
-
-
-
-    def updateProduct() {
-
-    }
-
-    def getProductBySku() {
-
-    }
-
-    def getProductsByCategory() {
-
-    }
-
-
-
-    def updateCategory() {
-
-    }
-
-    def getCategories() {
-
+    def addToCart(String addedProduct) {
+        StringBuffer cartList = new StringBuffer()
+        if (!cookieService.getCookie("cart")) {
+            cookieService.setCookie("cart", "",24*60)
+        } else {
+            cartList = cartList.append(cookieService.getCookie("cart"))
+        }
+        cartList = cartList.append(addedProduct).append(";")
+        println cartList
+        cookieService.setCookie("cart", cartList.toString(),24*60)
     }
 }

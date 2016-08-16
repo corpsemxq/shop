@@ -13,6 +13,11 @@
     </div>
 </g:else>
 
+
+<a href="#">
+    <span class="glyphicon glyphicon-shopping-cart pull-right">${cookie(name: "cart").size()}</span>
+</a>
+
 <div class="container hidden-xs logo">
     <a href="${createLink(controller: "page", action: "homePage")}"><img class="img-responsive"
                                                                          src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo.png"

@@ -43,7 +43,6 @@
 								<p class="name"><a data-toggle="modal" data-target="#myModal" class="getDetailOfItem" onclick="popitem(${item})">Item ${category} ${item}</a>
 								</p>
 								<button class="btn btn-outline-primary pull-right">Add to cart</button>
-
 								<p class="price">$9.99
 								</p>
 							</div>
