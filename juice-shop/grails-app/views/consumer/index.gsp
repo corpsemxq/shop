@@ -199,68 +199,68 @@
 		</div>
 	</section>
 
-	<section class="menu">
-		<div class="container-fluid">
-			<div class="row cover" style="background-image:url(images/home.jpg)"></div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-10 col-lg-offset-1 menu-card page-indent">
-					<h2 class="decoration-stars">Today's specials</h2>
-					<ul>
-						<li>
-							<div>
-								<p class="name"><span>Vivamus quis mattis risus</span>
-								</p>
-								<p class="price">$9.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-						<li>
-							<div>
-								<p class="name"><span>Aenean quam lectus</span>
-								</p>
-								<p class="price">$4.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-						<li>
-							<div>
-								<p class="name"><span>Convallis in sollicitudin</span>
-								</p>
-								<p class="price">$9.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-						<li>
-							<div>
-								<p class="name"><span>Maecenas non tellus</span>
-								</p>
-								<p class="price">$19.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-						<li>
-							<div>
-								<p class="name"><span>Quisque quis molestie elit</span>
-								</p>
-								<p class="price">$12.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-						<li>
-							<div>
-								<p class="name"><span>Proin ante purus, viverra sit amet cursus nec</span>
-								</p>
-								<p class="price">$12.99</p>
-							</div>
-							<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+	%{--<section class="menu">--}%
+		%{--<div class="container-fluid">--}%
+			%{--<div class="row cover" style="background-image:url(images/home.jpg)"></div>--}%
+		%{--</div>--}%
+		%{--<div class="container">--}%
+			%{--<div class="row">--}%
+				%{--<div class="col-md-12 col-lg-10 col-lg-offset-1 menu-card page-indent">--}%
+					%{--<h2 class="decoration-stars">Today's specials</h2>--}%
+					%{--<ul>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Vivamus quis mattis risus</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$9.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Aenean quam lectus</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$4.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Convallis in sollicitudin</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$9.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Maecenas non tellus</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$19.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Quisque quis molestie elit</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$12.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+						%{--<li>--}%
+							%{--<div>--}%
+								%{--<p class="name"><span>Proin ante purus, viverra sit amet cursus nec</span>--}%
+								%{--</p>--}%
+								%{--<p class="price">$12.99</p>--}%
+							%{--</div>--}%
+							%{--<p class="mute">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>--}%
+						%{--</li>--}%
+					%{--</ul>--}%
+				%{--</div>--}%
+			%{--</div>--}%
+		%{--</div>--}%
+	%{--</section>--}%
 
 	<section class="bg-pattern">
 		<div class="container">
@@ -371,9 +371,9 @@
 		%{--</div>--}%
 		<g:applyLayout name="footer" />
 	</footer>
-	<script src="${resource(dir: 'js', file: 'animate-on-scroll.js')}"></script>
-	<script src="${resource(dir: 'js', file: 'script.js')}"></script>
 	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+	<script src="${resource(dir: 'js', file: 'script.js')}"></script>
+	<script src="${resource(dir: 'js', file: 'animate-on-scroll.js')}"></script>
 	<script src="${resource(dir: 'js', file: 'swiper.jquery.min.js')}"></script>
 	<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 	<script>

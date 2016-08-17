@@ -12,6 +12,9 @@ class UrlMappings {
         "/user/logout"(controller: "user", namespace: "v1") { action = [GET: "logout"] }
 
 
+
+        "/product/addToCart"(controller: "product", namespace: "v1") { action = [GET: "addToCart"] }
+
         "/"(view:"/consumer/index")
         "/about"(view:"/consumer/about-us")
         "/menu"(view:"/consumer/card")

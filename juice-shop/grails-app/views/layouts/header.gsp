@@ -13,10 +13,11 @@
     </div>
 </g:else>
 
-
 <a href="#">
-    <span class="glyphicon glyphicon-shopping-cart pull-right">${cookie(name: "cart").size()}</span>
+    <span class="glyphicon glyphicon-shopping-cart" id="countOfCart"></span>
 </a>
+
+
 
 <div class="container hidden-xs logo">
     <a href="${createLink(controller: "page", action: "homePage")}"><img class="img-responsive"

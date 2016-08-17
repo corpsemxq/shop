@@ -1,11 +1,9 @@
 package juice.shop.action.ui
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.juice.shop.domain.Product
 import grails.plugin.cookie.CookieService
 import juice.shop.action.ProductService
 
-import javax.servlet.http.Cookie
 
 class ProductController {
 
@@ -16,7 +14,7 @@ class ProductController {
     def beforeInterceptor = [action: this.&filter]
     def ObjectMapper objectMapper
     ProductService productService
-    CookieService cookieService
+    def cookieService
 
     private filter() {
         response.setHeader('Access-Control-Allow-Origin', '*')
@@ -30,15 +28,22 @@ class ProductController {
     def index() {}
 
 
-    def addToCart(String addedProduct) {
+    def addToCart() {
         StringBuffer cartList = new StringBuffer()
+        println "=[========"
+        println cookieService.getCookie("cart")
         if (!cookieService.getCookie("cart")) {
-            cookieService.setCookie("cart", "",24*60)
+            cookieService.setCookie("cart", "",24*60*7*60)
         } else {
+            println cookieService.getCookie("cart")
             cartList = cartList.append(cookieService.getCookie("cart"))
         }
-        cartList = cartList.append(addedProduct).append(";")
+        cartList = cartList.append(params.addedProduct).append(",")
         println cartList
-        cookieService.setCookie("cart", cartList.toString(),24*60)
+//        cookieService.findCookie("cart").setValue(cartList.toString())
+        cookieService.setCookie("cart", cartList.toString())
+        println "count is ${cookieService.findCookie("cart")?.getValue()}"
+        Map result = [count : cookieService.findCookie("cart")?.getValue()?.split(',')?.length ?:0  ]
+        respond result
     }
 }

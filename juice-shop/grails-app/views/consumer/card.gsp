@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -42,7 +42,7 @@
 							<div>
 								<p class="name"><a data-toggle="modal" data-target="#myModal" class="getDetailOfItem" onclick="popitem(${item})">Item ${category} ${item}</a>
 								</p>
-								<button class="btn btn-outline-primary pull-right">Add to cart</button>
+									<button class="btn btn-outline-primary pull-right" onclick="addToCart(${item})">Add to cart</button>
 								<p class="price">$9.99
 								</p>
 							</div>
@@ -128,9 +128,8 @@
 	<footer class="page-footer">
 		<g:applyLayout name="footer" />
 	</footer>
-
-<script src="${resource(dir: 'js', file: 'script.js')}"></script>
 <script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+<script src="${resource(dir: 'js', file: 'script.js')}"></script>
 <script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 <script>
 	$(document).on("click", ".getDetailOfItem", function (item) {
@@ -146,6 +145,27 @@
 		document.getElementById("itemName").innerHTML = item;
 		console.log("sb");
 
+	}
+
+
+	function addToCart(item){
+        console.log("Getting into the js method")
+		$.ajax({
+			url: "${createLink(controller: "product", action: "addToCart")}",
+			type:"get",
+            data:{addedProduct:item},
+
+            success: function(response) {
+                console.log(response);
+                document.getElementById("countOfCart").innerHTML = response.count
+                //Do Something
+            },
+            error: function(xhr) {
+                //Do Something to handle error
+                console.log("456")
+
+            }
+		});
 	}
 
 </script>
