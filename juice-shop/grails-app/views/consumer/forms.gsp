@@ -61,28 +61,28 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Blog <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="blog-index.gsp">Blog no sidebars</a>
+											<li><a href="static/blog-index.gsp">Blog no sidebars</a>
 											</li>
-											<li><a href="blog-left-sidebar.gsp">Blog left sidebar</a>
+											<li><a href="static/blog-left-sidebar.gsp">Blog left sidebar</a>
 											</li>
-											<li><a href="blog-right-sidebar.gsp">Blog right sidebar</a>
+											<li><a href="static/blog-right-sidebar.gsp">Blog right sidebar</a>
 											</li>
-											<li><a href="blog-post.gsp">Blog post</a>
+											<li><a href="static/blog-post.gsp">Blog post</a>
 											</li>
 										</ul>
 									</li>
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Portfolio / Gallery <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="portfolio-2-columns.gsp">2 columns</a>
+											<li><a href="static/portfolio-2-columns.gsp">2 columns</a>
 											</li>
-											<li><a href="portfolio-3-columns.gsp">3 columns</a>
+											<li><a href="static/portfolio-3-columns.gsp">3 columns</a>
 											</li>
-											<li><a href="portfolio-4-columns.gsp">4 columns</a>
+											<li><a href="static/portfolio-4-columns.gsp">4 columns</a>
 											</li>
-											<li><a href="portfolio.gsp">Portfolio with filter</a>
+											<li><a href="static/portfolio.gsp">Portfolio with filter</a>
 											</li>
-											<li><a href="portfolio-item.gsp">Portfolio item</a>
+											<li><a href="static/portfolio-item.gsp">Portfolio item</a>
 											</li>
 										</ul>
 									</li>
@@ -263,7 +263,7 @@
 					<ul class="footer-links">
 						<li><a href="#">Privacy Policy</a>
 						</li>
-						<li><a href="blog-index.gsp">Blog</a>
+						<li><a href="static/blog-index.gsp">Blog</a>
 						</li>
 						<li><a href="contact.gsp">Contact</a>
 						</li>

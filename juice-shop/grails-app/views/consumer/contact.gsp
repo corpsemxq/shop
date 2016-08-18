@@ -128,10 +128,10 @@
 </footer>
 <script src="//maps.google.com/maps/api/js?sensor=false"></script>
 
+<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
 <script src="${resource(dir: 'js', file: 'script.js')}"></script>
 <script src="${resource(dir: 'js', file: 'gmap3.min.js')}"></script>
 <script src="${resource(dir: 'js', file: 'modernizr-custom.js')}"></script>
-<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
 <script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 <script>
     $('#gmap').gmap3({

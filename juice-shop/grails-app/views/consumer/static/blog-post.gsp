@@ -21,14 +21,14 @@
 <body>
 	<header>
 		<div class="container hidden-xs logo">
-			<a href="index.gsp"><img class="img-responsive" src="images/logos/logo.png" alt="Logo" />
+			<a href="../index.gsp"><img class="img-responsive" src="images/logos/logo.png" alt="Logo" />
 			</a>
 		</div>
 		<div class="navbar-wrapper">
 			<div class="container">
 				<nav class="navbar navbar-static-top">
 					<div class="navbar-header">
-						<a class="navbar-brand visible-xs" href="index.gsp"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo-xs.png" alt="" />
+						<a class="navbar-brand visible-xs" href="../index.gsp"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo-xs.png" alt="" />
 						</a>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							<span class="sr-only">Toggle navigation</span>
@@ -43,18 +43,18 @@
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="dropdown-submenu">
-										<a href="index.gsp">Home</a>
+										<a href="../index.gsp">Home</a>
 									</li>
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Pages <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="page-simple.gsp">Simple Page</a>
+											<li><a href="../page-simple.gsp">Simple Page</a>
 											</li>
-											<li><a href="page-sidebar.gsp">Right Sidebar</a>
+											<li><a href="../page-sidebar.gsp">Right Sidebar</a>
 											</li>
-											<li><a href="about-us.gsp">About Us</a>
+											<li><a href="../about-us.gsp">About Us</a>
 											</li>
-											<li><a href="services.gsp">Services</a>
+											<li><a href="../services.gsp">Services</a>
 											</li>
 										</ul>
 									</li>
@@ -89,11 +89,11 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Special <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="../404.gsp">404</a>
+											<li><a href="../../404.gsp">404</a>
 											</li>
-											<li><a href="empty.gsp">Empty</a>
+											<li><a href="../empty.gsp">Empty</a>
 											</li>
-											<li><a href="login.gsp">Sign in</a>
+											<li><a href="../login.gsp">Sign in</a>
 											</li>
 										</ul>
 									</li>
@@ -103,19 +103,19 @@
 
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Features</a>
 								<ul class="dropdown-menu">
-									<li><a href="typography.gsp">Typography</a>
+									<li><a href="../typography.gsp">Typography</a>
 									</li>
-									<li><a href="forms.gsp">Forms</a>
+									<li><a href="../forms.gsp">Forms</a>
 									</li>
-									<li><a href="buttons.gsp">Buttons</a>
+									<li><a href="../buttons.gsp">Buttons</a>
 									</li>
 								</ul>
 							</li>
 
-							<li><a href="card.gsp">Menu</a>
+							<li><a href="../card.gsp">Menu</a>
 							</li>
 
-							<li><a href="contact.gsp">Contact</a>
+							<li><a href="../contact.gsp">Contact</a>
 							</li>
 
 						</ul>
@@ -410,7 +410,7 @@
 				<div class="row-xs-12">
 					<div class="divider"></div>
 					<div class="text-center">
-						<a href="index.gsp"><img src="images/logos/logo.png" alt="" class="logo">
+						<a href="../index.gsp"><img src="images/logos/logo.png" alt="" class="logo">
 						</a>
 					</div>
 				</div>
@@ -422,7 +422,7 @@
 						</li>
 						<li><a href="blog-index.gsp">Blog</a>
 						</li>
-						<li><a href="contact.gsp">Contact</a>
+						<li><a href="../contact.gsp">Contact</a>
 						</li>
 					</ul>
 				</div>

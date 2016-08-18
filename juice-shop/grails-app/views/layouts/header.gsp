@@ -13,9 +13,32 @@
     </div>
 </g:else>
 
-<a href="#">
-    <span class="glyphicon glyphicon-shopping-cart" id="countOfCart"></span>
-</a>
+<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            var cartCookie = getCookie("cart");
+            if (cartCookie == '""') {
+            } else {
+                console.log(cartCookie);
+                var countOfCart = cartCookie.split('|').length - 1;
+                document.getElementById("countOfCart").innerHTML = countOfCart
+            }
+        });
+    })(jQuery);
+
+
+    function getCookie(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+</script>
+
+%{--cart icon--}%
+<g:link controller="page" action="cartPage"><span class="glyphicon glyphicon-shopping-cart"
+                                                  id="countOfCart"></span></g:link>
 
 
 

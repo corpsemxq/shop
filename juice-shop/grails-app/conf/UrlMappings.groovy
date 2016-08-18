@@ -14,6 +14,7 @@ class UrlMappings {
 
 
         "/product/addToCart"(controller: "product", namespace: "v1") { action = [GET: "addToCart"] }
+        "/product/deleteProductFromCart"(controller: "product", namespace: "v1") { action = [GET: "deleteProductFromCart"] }
 
         "/"(view:"/consumer/index")
         "/about"(view:"/consumer/about-us")

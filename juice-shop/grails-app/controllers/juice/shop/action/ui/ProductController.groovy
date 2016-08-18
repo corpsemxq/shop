@@ -3,11 +3,12 @@ package juice.shop.action.ui
 import com.fasterxml.jackson.databind.ObjectMapper
 import grails.plugin.cookie.CookieService
 import juice.shop.action.ProductService
+import org.apache.commons.lang.StringUtils
 
 
 class ProductController {
 
-    static allowedMethods = [saveUser: "POST"]
+    static allowedMethods = [saveUser: "POST", deleteProductFromCart:"GET"]
 
     static responseFormats = ['json', 'html']
     static namespace = 'v1'
@@ -28,22 +29,41 @@ class ProductController {
     def index() {}
 
 
+    /**
+     * @params
+     * addedProduct
+     * @return
+     */
     def addToCart() {
         StringBuffer cartList = new StringBuffer()
-        println "=[========"
-        println cookieService.getCookie("cart")
         if (!cookieService.getCookie("cart")) {
-            cookieService.setCookie("cart", "",24*60*7*60)
+            cookieService.setCookie("cart", "", 864000, "/")
         } else {
-            println cookieService.getCookie("cart")
             cartList = cartList.append(cookieService.getCookie("cart"))
         }
-        cartList = cartList.append(params.addedProduct).append(",")
-        println cartList
-//        cookieService.findCookie("cart").setValue(cartList.toString())
-        cookieService.setCookie("cart", cartList.toString())
-        println "count is ${cookieService.findCookie("cart")?.getValue()}"
-        Map result = [count : cookieService.findCookie("cart")?.getValue()?.split(',')?.length ?:0  ]
+        cartList = cartList.append(params.addedProduct).append("|")
+        cookieService.setCookie("cart", cartList.toString(), 864000, "/")
+        Map result = [count :  StringUtils.countMatches(cookieService.findCookie("cart")?.getValue(), '|')+1]
         respond result
     }
+
+    def updateQuantityOfProduct() {
+
+    }
+
+    /**
+     * @params
+     * deletedProduct
+     */
+    def deleteProductFromCart() {
+        if (cookieService.getCookie("cart")) {
+            cookieService.setCookie("cart",
+                    cookieService.findCookie("cart").getValue().replace("${params.deletedProducted}|",""), 864000, "/")
+        }
+        if (cookieService.findCookie("cart").getValue() == "")
+            cookieService.deleteCookie("cart")
+        redirect(controller: "page", action: "cartPage")
+    }
+
+
 }

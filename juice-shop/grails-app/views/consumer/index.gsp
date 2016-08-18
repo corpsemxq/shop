@@ -284,7 +284,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.gsp">View more</a>
+						<a href="static/portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -292,7 +292,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.gsp">View more</a>
+						<a href="static/portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -300,7 +300,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.gsp">View more</a>
+						<a href="static/portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 				<figure class="animateOnScroll" data-animation="fadeIn">
@@ -308,7 +308,7 @@
 					<figcaption>
 						<h2>Portfolio Item</h2>
 						<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-						<a href="portfolio-item.gsp">View more</a>
+						<a href="static/portfolio-item.gsp">View more</a>
 					</figcaption>
 				</figure>
 			</div>

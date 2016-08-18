@@ -110,13 +110,14 @@
 			</div>
 		</div>
 	</section>
+
 	<footer class="page-footer">
 		<g:applyLayout name="footer" />
 	</footer>
 
+<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
 <script src="${resource(dir: 'js', file: 'animate-on-scroll.js')}"></script>
 <script src="${resource(dir: 'js', file: 'script.js')}"></script>
-<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
 <script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 </body>
 

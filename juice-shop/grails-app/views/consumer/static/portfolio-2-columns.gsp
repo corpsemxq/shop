@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ZUPA - Responsive Website Template / Portfolio 4 columns</title>
+	<title>ZUPA - Responsive Website Template / Portfolio 2 columns</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]>
@@ -21,14 +21,14 @@
 <body>
 	<header>
 		<div class="container hidden-xs logo">
-			<a href="index.gsp"><img class="img-responsive" src="images/logos/logo.png" alt="Logo" />
+			<a href="../index.gsp"><img class="img-responsive" src="images/logos/logo.png" alt="Logo" />
 			</a>
 		</div>
 		<div class="navbar-wrapper">
 			<div class="container">
 				<nav class="navbar navbar-static-top">
 					<div class="navbar-header">
-						<a class="navbar-brand visible-xs" href="index.gsp"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo-xs.png" alt="" />
+						<a class="navbar-brand visible-xs" href="../index.gsp"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-103717042850/img/Website+Image/logos/logo-xs.png" alt="" />
 						</a>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 							<span class="sr-only">Toggle navigation</span>
@@ -43,18 +43,18 @@
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Pages</a>
 								<ul class="dropdown-menu">
 									<li class="dropdown-submenu">
-										<a href="index.gsp">Home</a>
+										<a href="../index.gsp">Home</a>
 									</li>
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Pages <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="page-simple.gsp">Simple Page</a>
+											<li><a href="../page-simple.gsp">Simple Page</a>
 											</li>
-											<li><a href="page-sidebar.gsp">Right Sidebar</a>
+											<li><a href="../page-sidebar.gsp">Right Sidebar</a>
 											</li>
-											<li><a href="about-us.gsp">About Us</a>
+											<li><a href="../about-us.gsp">About Us</a>
 											</li>
-											<li><a href="services.gsp">Services</a>
+											<li><a href="../services.gsp">Services</a>
 											</li>
 										</ul>
 									</li>
@@ -89,11 +89,11 @@
 									<li class="dropdown-submenu">
 										<a data-toggle="dropdown" class="trigger dropdown-toggle" href="#">Special <span class="pull-right"><i class="fa fa-angle-right"></i></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="../404.gsp">404</a>
+											<li><a href="../../404.gsp">404</a>
 											</li>
-											<li><a href="empty.gsp">Empty</a>
+											<li><a href="../empty.gsp">Empty</a>
 											</li>
-											<li><a href="login.gsp">Sign in</a>
+											<li><a href="../login.gsp">Sign in</a>
 											</li>
 										</ul>
 									</li>
@@ -103,19 +103,19 @@
 
 							<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Features</a>
 								<ul class="dropdown-menu">
-									<li><a href="typography.gsp">Typography</a>
+									<li><a href="../typography.gsp">Typography</a>
 									</li>
-									<li><a href="forms.gsp">Forms</a>
+									<li><a href="../forms.gsp">Forms</a>
 									</li>
-									<li><a href="buttons.gsp">Buttons</a>
+									<li><a href="../buttons.gsp">Buttons</a>
 									</li>
 								</ul>
 							</li>
 
-							<li><a href="card.gsp">Menu</a>
+							<li><a href="../card.gsp">Menu</a>
 							</li>
 
-							<li><a href="contact.gsp">Contact</a>
+							<li><a href="../contact.gsp">Contact</a>
 							</li>
 
 						</ul>
@@ -128,12 +128,12 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-sm-12">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
 				<h2>Portfolio</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non imperdiet ante. Nam luctus nulla ac justo euismod bibendum. Maecenas vel libero dapibus, accumsan sem eu, viverra nisi. Nunc lectus justo, pulvinar vel libero ac, aliquam malesuada orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ut leo et arcu condimentum maximus. Nulla facilisi. </p>
 			</div>
-			<div class="col-sm-12">
-				<div class="portfolio grid-4">
+			<div class="col-sm-12 col-md-10 col-md-offset-1">
+				<div class="portfolio grid-2">
 					<figure>
 						<img src="images/portfolio/1.jpg" alt="" />
 						<figcaption>
@@ -167,54 +167,6 @@
 						</figcaption>
 					</figure>
 					<figure>
-						<img src="images/portfolio/2.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/3.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/4.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/1.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/3.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/4.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
 						<img src="images/portfolio/1.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
@@ -224,22 +176,6 @@
 					</figure>
 					<figure>
 						<img src="images/portfolio/2.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/4.jpg" alt="" />
-						<figcaption>
-							<h2>Portfolio Item</h2>
-							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
-							<a href="portfolio-item.gsp">View more</a>
-						</figcaption>
-					</figure>
-					<figure>
-						<img src="images/portfolio/1.jpg" alt="" />
 						<figcaption>
 							<h2>Portfolio Item</h2>
 							<p>Dis-moi ce que tu manges, je te dirai ce que tu es</p>
@@ -274,7 +210,7 @@
 				<div class="row-xs-12">
 					<div class="divider"></div>
 					<div class="text-center">
-						<a href="index.gsp"><img src="images/logos/logo.png" alt="" class="logo">
+						<a href="../index.gsp"><img src="images/logos/logo.png" alt="" class="logo">
 						</a>
 					</div>
 				</div>
@@ -286,7 +222,7 @@
 						</li>
 						<li><a href="blog-index.gsp">Blog</a>
 						</li>
-						<li><a href="contact.gsp">Contact</a>
+						<li><a href="../contact.gsp">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -297,9 +233,9 @@
 		</div>
 	</footer>
 
-	<script src="${resource(dir: 'js', file: 'script.js')}"></script>
-	<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
-	<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
+<script src="${resource(dir: 'js', file: 'script.js')}"></script>
+<script src="${resource(dir: 'js', file: 'jquery.min.js')}"></script>
+<script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>ZUPA - Responsive Website Template / Card</title>
+	<title>Menu-${category}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!--[if lt IE 9]>
@@ -117,7 +117,7 @@
 				<p>Discription goes here</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default">Add to cart</button>
+				<button type="button" class="btn btn-default" id="popupAddToCart">Add to cart</button>
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
 		</div>
@@ -132,19 +132,13 @@
 <script src="${resource(dir: 'js', file: 'script.js')}"></script>
 <script src="${resource(dir: 'bootstrap', file: 'js/bootstrap.min.js')}"></script>
 <script>
-	$(document).on("click", ".getDetailOfItem", function (item) {
-		var item = $(this).data(item);
-		$(".modal-body #itemName").val(123);
-
-		// As pointed out in comments,
-		// it is superfluous to have to manually call the modal.
-		// $('#addBookDialog').modal('show');
-	});
 
 	function popitem (item) {
 		document.getElementById("itemName").innerHTML = item;
-		console.log("sb");
-
+        $('#popupAddToCart').on('click', function () {
+            addToCart(item);
+            $('#myModal').modal('hide');
+                });
 	}
 
 
@@ -157,16 +151,16 @@
 
             success: function(response) {
                 console.log(response);
-                document.getElementById("countOfCart").innerHTML = response.count
+                document.getElementById("countOfCart").innerHTML = response.count;
                 //Do Something
             },
             error: function(xhr) {
-                //Do Something to handle error
-                console.log("456")
+                alert("Add to cart failed, please try again")
 
             }
 		});
 	}
+
 
 </script>
 
