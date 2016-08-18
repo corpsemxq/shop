@@ -43,6 +43,8 @@ class PageController {
         if (cartProducts) {
             for (def product in cartProducts) {
                 if (product) {
+                    log.info "This is product ${product}"
+                    log.info "${product} has ${cartProductsQuantity."${product}"}"
                     if (product in cartProductsQuantity.keySet()) {
                         cartProductsQuantity."${product}" = cartProductsQuantity."${product}" + 1
                     } else {

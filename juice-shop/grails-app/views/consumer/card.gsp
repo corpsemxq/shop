@@ -117,7 +117,7 @@
 				<p>Discription goes here</p>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-default" id="popupAddToCart">Add to cart</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal" id="popupAddToCart">Add to cart</button>
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			</div>
 		</div>
@@ -137,9 +137,8 @@
 		document.getElementById("itemName").innerHTML = item;
         $('#popupAddToCart').on('click', function () {
             addToCart(item);
-            $('#myModal').modal('hide');
-                });
-	}
+	    });
+    }
 
 
 	function addToCart(item){
